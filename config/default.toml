@@ -1,11 +1,11 @@
-
-[api]
-port = 3000
-host = "127.0.0.1" # by default API server is accessible from localhost only
-
-[dbs]
-# redis connection
-redis = "redis://127.0.0.1:6379/8"
-
-[log]
-level = "trace"
+{
+  "url": "http://localhost:3000/",
+  "server": {
+    "port": 3000,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "content/data/ghost-local.db"
+    }
